@@ -2,6 +2,7 @@
 
 var email = "";
 
+console.log("here");
 
 function sendEmail(){
 
@@ -80,4 +81,3 @@ WYO.LLC Team";
 }
 
 //get_selections()
-
