@@ -1,0 +1,1028 @@
+/* for input css check out http://materializecss.com/text-inputs.html */
+/* https://codepen.io/sevilayha/pen/IdGKH */
+
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+  position:relative;
+  /* margin-bottom:45px; */
+}
+input 				{
+  font-size:14px;
+  padding:7px 10px 2px 5px;
+  display:block;
+  width:500px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999;
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:2px;
+  top:5px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-6px;
+  font-size:11px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:220px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#5264AE;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:400px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+
+
+select{
+  border-bottom: 2px solid grey;
+  font-size: 14px;
+  color: grey;
+  margin: 2px 0px 0px 0px;
+  width:190px;
+  height:25px;
+}
+
+body{
+  margin: 20 auto;
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+  font-family: 'Verdana';
+}
+
+img {
+    display: block;
+    max-height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#test{
+  color: white;
+}
+
+table{
+  text-align: center;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper{
+  display: block;
+  background-color: white;
+  opacity: 1;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#container_A{
+  display: block;
+  width: 80%;
+  height: 44px;
+  margin: -46px 0px 0px 0px;
+  background-color: white;
+}
+
+
+
+
+
+
+
+#container_destination{
+  align-self: center;
+  display: block;
+  width: 500px;
+  height: 60px;
+  margin:auto;
+  /* background-color: blue; */
+}
+
+#dest_1{
+
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  height: 80%;
+  /* background-color: red; */
+  margin: 5px 0px 0px 0px;
+  vertical-align: middle;
+}
+
+#dest_2{
+  display: inline-block;
+  width: 20%;
+  height: 95%;
+  /* margin: 2px 0px 2px 2px; */
+  /* background-color: white; */
+  vertical-align: top;
+}
+
+#dest_spacer{
+  display: inline-block;
+  width: 10%;
+  height: 5%;
+  vertical-align: top;
+  /* margin: 2px 0px 2px 2px; */
+  /* background-color: white; */
+}
+
+
+
+#container_destination{
+  align-self: center;
+  display: block;
+  width: 500px;
+  height: 120px;
+  margin:auto;
+  /* background-color: blue; */
+}
+
+#dest_1{
+
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  height: 80%;
+  /* background-color: red; */
+  margin: 5px 0px 0px 0px;
+  vertical-align: middle;
+}
+
+#dest_2{
+  display: inline-block;
+  width: 20%;
+  height: 95%;
+  /* margin: 2px 0px 2px 2px; */
+  /* background-color: white; */
+  vertical-align: top;
+}
+
+#container_results{
+  display: block;
+  width: 900px;
+  height: 600px;
+  margin: 50px 0px 0px 50px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+#box_form{
+  display: block;
+  width: 1000px;
+  height: 1200px;
+  margin: 4px 0px 0px 0px;
+  background-color: white;
+}
+
+#block_form1{
+  display: inline-block;
+  width: 550px;
+  height: 250px;
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+  background-color: white;
+  align-content: center;
+  color: grey;
+}
+
+#block_form2{
+  display: inline-block;
+  width: 610px;
+  height: 250px;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  background-color: white;
+  align-content: center;
+  color: grey;
+}
+
+#block_form3{
+  display: inline-block;
+  width: 900px;
+  height: 400px;
+  margin: 10px 0px 50px 0px;
+  text-align: center;
+  background-color: white;
+  align-content: center;
+  color: grey;
+}
+
+#box_results{
+  display: block;
+  width: 1000px;
+  height: 600px;
+  margin: 0px 0px 0px 0px;
+  background-color: white;
+}
+
+#header_form{
+  display: block;
+  vertical-align: middle;
+  width: 900px;
+  height: 20px;
+  margin: 0px 0px 0px 0px;
+  background-color: grey;
+}
+
+
+#line_form{
+  display: inline-block;
+  width: 2px;
+  height: 38px;
+  margin: 0px 0px 0px -2px;
+  background-color: grey;
+}
+
+#container_form{
+  display: inline-block;
+  width: 900px;
+  height: 1100px;
+  margin: 50px 0px 0px 50px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+#subblock_form2{
+  display: inline-block;
+  width: 190px;
+  height: 250px;
+  margin: 0px 5px 0px 0px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+#subblock_form3{
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  margin: 0px 25px 0px 0px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+#line_A{
+  display: block;
+  width: 1000px;
+  height: 38px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+#container_B{
+  display: inline-block;
+  width: 250px;
+  height: 180px;
+  margin: 0px 25px 0px 0px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+
+#header_BC{
+  display: block;
+  color: blue;
+  width: 500px;
+  height: 20px;
+  margin: 50px 0px 0px 50px;
+  vertical-align: middle;
+  border-bottom: 4px;
+  border-color: grey;
+}
+
+#container_C{
+  display: inline-block;
+  width: 250px;
+  height: 180px;
+  margin: 0px 0px 0px 25px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+#line_BC{
+  display: inline-block;
+  width: 1px;
+  height: 160px;
+  margin: -25px 0px 0px 0px;
+  background-color: lightgrey;
+  vertical-align: middle;
+}
+
+#container_D{
+  display: inline-block;
+  width: 350px;
+  height: 300px;
+  margin: 0px 0px 0px 50px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+#header_D{
+  display: inline-block;
+  width: 350px;
+  height: 20px;
+  margin: 50px 0px 0px 50px;
+  background-color: grey;
+  vertical-align: middle;
+}
+
+#header_E{
+  display: block;
+  width: 900px;
+  height: 20px;
+  margin: 50px 0px 0px 50px;
+  background-color: grey;
+}
+
+#container_E{
+  display: block;
+  width: 900px;
+  height: 120px;
+  margin: 0px 0px 50px 50px;
+  background-color: white;
+}
+
+#block_A1{
+  /* display: block; */
+  width: 400px;
+  height: 328px;
+  margin: auto;
+  background-color: white;
+  /* align-self: center; */
+}
+
+#block_A2{
+  display: inline-block;
+  width: 680px;
+  height: 40px;
+  margin: 2px -2px 2px -2px;
+  background-color: white;
+}
+
+#block_A3{
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  margin: 2px 2px 2px 0px;
+  background-color: white;
+}
+
+#subhead_BC{
+  display: inline-block;
+  width: 245px;
+  height: 20px;
+  margin: 2px 2px 2px 2px;
+  background-color: white;
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+}
+
+#block_BC1{
+  display: inline-block;
+  width: 245px;
+  height: 60px;
+  margin: 2px 2px 2px 2px;
+  background-color: white;
+
+}
+
+#block_B2{
+  display: inline-block;
+  width: 245px;
+  height: 60px;
+  margin: 0px 2px 2px 2px;
+  background-color: white;
+
+}
+
+#block_C2{
+  display: inline-block;
+  width: 245px;
+  height: 120px;
+  margin: 0px 2px 2px 2px;
+  background-color: white;
+}
+
+#subhead_D{
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  margin: 2px 0px 2px -1px;
+  background-color: white;
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+}
+
+#line_D{
+  display: inline-block;
+  width: 2px;
+  height: 18px;
+  margin: 0px 0px 0px -2px;
+  background-color: grey;
+}
+
+#block_D1{
+  display: inline-block;
+  width: 346px;
+  height: 85px;
+  margin: 2px 2px 0px 2px;
+  background-color: white;
+}
+
+#block_E1{
+  display: inline-block;
+  width: 150px;
+  height: 116px;
+  margin: 2px 0px 2px 2px;
+  background-color: white;
+}
+
+#block_E2{
+  display: inline-block;
+  width: 430px;
+  height: 116px;
+  margin: 2px -2px 2px -2px;
+  background-color: white;
+}
+
+#block_E3{
+  display: inline-block;
+  width: 300px;
+  height: 116px;
+  margin: 2px 2px 2px 0px;
+  background-color: white;
+}
+
+#block_A2 .header_text_A{
+  background-color: white;
+  color: grey;
+  text-align: center;
+}
+
+span{
+  color: grey;
+  text-align: center;
+}
+
+container{
+  /* margin: 10 10 10 10; */
+  display: block;
+  /* width: 90%; */
+  /* height: 100%; */
+  /* background-color: grey; */
+  color: white;
+}
+
+header{
+  background-color: white;
+  color: grey;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.button_apollo {
+				width: 111px;
+				height: 56px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/apollo.png');
+        background-size: cover;
+        border: none;
+}
+.button_apollo:hover {
+				cursor: pointer;
+        background-image: url('../assets/apollo_selected.png');
+        background-size: cover;
+}
+.button_apollo:active {
+				transition: 0s;
+        background-image: url('../assets/apollo_selected.png');
+        background-size: cover;
+}
+
+.button_shuttle {
+        width: 111px;
+        height: 56px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/shuttle.png');
+        background-size: cover;
+        border: none;
+}
+.button_shuttle:hover {
+				cursor: pointer;
+        background-image: url('../assets/shuttle_selected.png');
+        background-size: cover;
+}
+.button_shuttle:active {
+				transition: 0s;
+        background-image: url('../assets/shuttle_selected.png');
+        background-size: cover;
+}
+
+.button_iss {
+        width: 111px;
+        height: 56px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/iss.png');
+        background-size: cover;
+        border: none;
+}
+.button_iss:hover {
+				cursor: pointer;
+        background-image: url('../assets/iss_selected.png');
+        background-size: cover;
+}
+.button_iss:active {
+				transition: 0s;
+        background-image: url('../assets/iss_selected.png');
+        background-size: cover;
+}
+
+.button_light {
+        width: 111px;
+        height: 56px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/light.png');
+        background-size: cover;
+        border: none;
+}
+.button_light:hover {
+				cursor: pointer;
+        background-image: url('../assets/light_selected.png');
+        background-size: cover;
+}
+.button_light:active {
+				transition: 0s;
+        background-image: url('../assets/light_selected.png');
+        background-size: cover;
+}
+
+.button_moderate {
+        width: 111px;
+        height: 56px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/moderate.png');
+        background-size: cover;
+        border: none;
+}
+.button_moderate:hover {
+				cursor: pointer;
+        background-image: url('../assets/moderate_selected.png');
+        background-size: cover;
+}
+.button_moderate:active {
+				transition: 0s;
+        background-image: url('../assets/moderate_selected.png');
+        background-size: cover;
+}
+
+.button_heavy {
+        width: 111px;
+        height: 56px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/heavy.png');
+        background-size: cover;
+        border: none;
+}
+.button_heavy:hover {
+				cursor: pointer;
+        background-image: url('../assets/heavy_selected.png');
+        background-size: cover;
+}
+.button_heavy:active {
+				transition: 0s;
+        background-image: url('../assets/heavy_selected.png');
+        background-size: cover;
+}
+
+
+.button_earth {
+				width: 60px;
+				height: 60px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/earth.png');
+        background-size: cover;
+        border: none;
+}
+.button_earth:hover {
+				cursor: pointer;
+        background-image: url('../assets/earth_selected.png');
+        background-size: cover;
+}
+.button_earth:active {
+				transition: 0s;
+        background-image: url('../assets/earth_selected.png');
+        background-size: cover;
+}
+
+.button_moon {
+				width: 60px;
+				height: 60px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/moon.png');
+        background-size: cover;
+        border: none;
+}
+.button_moon:hover {
+				cursor: pointer;
+        background-image: url('../assets/moon_selected.png');
+        background-size: cover;
+}
+.button_moon:active {
+				transition: 0s;
+        background-image: url('../assets/moon_selected.png');
+        background-size: cover;
+}
+
+
+.button_mars {
+				width: 60px;
+				height: 60px;
+        margin: 10px;
+				transition: .5s;
+        background-image: url('../assets/mars.png');
+        background-size: cover;
+        border: none;
+}
+.button_mars:hover {
+				cursor: pointer;
+        background-image: url('../assets/mars_selected.png');
+        background-size: cover;
+}
+.button_mars:active {
+				transition: 0s;
+        background-image: url('../assets/mars_selected.png');
+        background-size: cover;
+}
+
+
+
+
+
+
+
+
+.button_start {
+				width: 189px;
+				height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/start.png');
+        background-size: cover;
+        border: none;
+}
+.button_start:hover {
+				cursor: pointer;
+        background-image: url('../assets/start_h.png');
+        background-size: cover;
+}
+.button_start:active {
+				transition: 0s;
+        background-image: url('../assets/start_c.png');
+        background-size: cover;
+}
+
+
+
+.button_custom {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/custom.png');
+        background-size: cover;
+        border: none;
+}
+.button_custom:hover {
+				cursor: pointer;
+        background-image: url('../assets/custom_h.png');
+        background-size: cover;
+}
+.button_custom:active {
+				transition: 0s;
+        background-image: url('../assets/custom_c.png');
+        background-size: cover;
+}
+
+
+
+.button_custom_na {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/custom.png');
+        background-size: cover;
+        border: none;
+}
+.button_custom_na:hover {
+				cursor: pointer;
+        background-image: url('../assets/custom_NA_h.png');
+        background-size: cover;
+}
+.button_custom_na:active {
+				transition: 0s;
+        background-image: url('../assets/custom_NA_c.png');
+        background-size: cover;
+}
+
+
+
+.button_back {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/back.png');
+        background-size: cover;
+        border: none;
+}
+.button_back:hover {
+				cursor: pointer;
+        background-image: url('../assets/back_h.png');
+        background-size: cover;
+}
+.button_back:active {
+				transition: 0s;
+        background-image: url('../assets/back_c.png');
+        background-size: cover;
+}
+
+
+
+.button_next {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/next.png');
+        background-size: cover;
+        border: none;
+}
+.button_next:hover {
+				cursor: pointer;
+        background-image: url('../assets/next_h.png');
+        background-size: cover;
+}
+.button_next:active {
+				transition: 0s;
+        background-image: url('../assets/next_c.png');
+        background-size: cover;
+}
+
+
+
+
+.button_done {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/done.png');
+        background-size: cover;
+        border: none;
+}
+.button_done:hover {
+				cursor: pointer;
+        background-image: url('../assets/done_h.png');
+        background-size: cover;
+}
+.button_done:active {
+				transition: 0s;
+        background-image: url('../assets/done_c.png');
+        background-size: cover;
+}
+
+
+.button_reset {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/reset.png');
+        background-size: cover;
+        border: none;
+}
+.button_reset:hover {
+				cursor: pointer;
+        background-image: url('../assets/reset_h.png');
+        background-size: cover;
+}
+.button_reset:active {
+				transition: 0s;
+        background-image: url('../assets/reset_c.png');
+        background-size: cover;
+}
+
+
+
+.button_share {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/share.png');
+        background-size: cover;
+        border: none;
+}
+.button_share:hover {
+				cursor: pointer;
+        background-image: url('../assets/share_h.png');
+        background-size: cover;
+}
+.button_share:active {
+				transition: 0s;
+        background-image: url('../assets/share_c.png');
+        background-size: cover;
+}
+
+
+
+
+
+.button_save {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/save.png');
+        background-size: cover;
+        border: none;
+}
+.button_save:hover {
+				cursor: pointer;
+        background-image: url('../assets/save_h.png');
+        background-size: cover;
+}
+.button_save:active {
+				transition: 0s;
+        background-image: url('../assets/save_c.png');
+        background-size: cover;
+}
+
+
+.button_more {
+        width: 189px;
+        height: 37px;
+        margin: 5px;
+				transition: .5s;
+        background-image: url('../assets/more.png');
+        background-size: cover;
+        border: none;
+}
+.button_more:hover {
+				cursor: pointer;
+        background-image: url('../assets/more_h.png');
+        background-size: cover;
+}
+.button_more:active {
+				transition: 0s;
+        background-image: url('../assets/more_c.png');
+        background-size: cover;
+}
+
+
+.button_run {
+				width: 286px;
+				height: 56px;
+        margin: 15px;
+				transition: .5s;
+        background-image: url('../assets/run.png');
+        background-size: cover;
+        border: none;
+}
+.button_run:hover {
+				cursor: pointer;
+        background-image: url('../assets/run_h.png');
+        background-size: cover;
+}
+.button_run:active {
+				transition: 0s;
+        background-image: url('../assets/run_c.png');
+        background-size: cover;
+}
+
+
+#button_spacer{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+
+/* button {
+				font-size: 16px;
+				display: block;
+				width: 300px;
+				height: 50px;
+				margin: 0 auto;
+				transition: .5s;
+				color: black;
+				border: none;
+				border-radius: 50px;
+				background-color: #999;
+}
+
+button:hover {
+				cursor: pointer;
+				background-color: grey;
+}
+
+button:active {
+				transition: 0s;
+				background-color: #5264AE;
+} */
+
